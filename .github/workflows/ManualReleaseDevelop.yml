@@ -28,6 +28,7 @@ jobs:
     runs-on: "windows-latest"
     
     env:
+      working-directory: .
       BUILD_PLATFORM: 'Any CPU'
       PROJECT_NAME: 'SRTPluginHelper'
       SOLUTION: 'SRTPluginHelper/SRTPluginHelper.sln'
