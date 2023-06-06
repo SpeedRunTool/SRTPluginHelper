@@ -35,6 +35,10 @@ jobs:
       PROJECT: 'SRTPluginHelper/src/SRTPluginHelper/SRTPluginHelper.csproj'
 
     steps:
+    # Create repo user folder for the dependencies
+    - name: Create repo user folder
+      run: New-Item -ItemType directory -Path ..\..\SpeedRunTool
+      
     - name: Checkout
       uses: actions/checkout@v3
       with:
