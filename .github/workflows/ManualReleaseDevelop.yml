@@ -30,8 +30,8 @@ jobs:
     env:
       BUILD_PLATFORM: 'Any CPU'
       PROJECT_NAME: 'SRTPluginHelper'
-      SOLUTION: (${{env.PROJECT_NAME}} + '/' + ${{env.PROJECT_NAME}} + '.sln')
-      PROJECT: (${{env.PROJECT_NAME}} + '/src/' + ${{env.PROJECT_NAME}} + '/' + ${{env.PROJECT_NAME}} + '.csproj')
+      SOLUTION: $env:PROJECT_NAME + '/' + $env:PROJECT_NAME + '.sln'
+      PROJECT: $env:PROJECT_NAME + '/src/' + $env:PROJECT_NAME + '/' + $env:PROJECT_NAME + '.csproj'
 
     steps:
     - name: Checkout
