@@ -47,7 +47,7 @@
 	<Choose>
 		<When Condition="'$(Configuration)'=='Debug'">
 			<ItemGroup>
-				<ProjectReference Include="..\..\..\..\SpeedRunTool\SRTPluginBase\src\SRTPluginBase\SRTPluginBase.csproj">
+				<ProjectReference Include="..\..\..\SRTPluginBase\src\SRTPluginBase\SRTPluginBase.csproj">
 					<Private>false</Private>
 					<ExcludeAssets>runtime</ExcludeAssets>
 				</ProjectReference>
