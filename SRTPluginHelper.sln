@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRTPluginHelper", "src\SRTPluginHelper\SRTPluginHelper.csproj", "{91F9932D-B511-41FD-9998-B7FB40AD9AD0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRTPluginBase", "..\..\SpeedRunTool\SRTPluginBase\src\SRTPluginBase\SRTPluginBase.csproj", "{E26FBE95-0D5E-489B-8D23-23B4B7775049}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{91F9932D-B511-41FD-9998-B7FB40AD9AD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F9932D-B511-41FD-9998-B7FB40AD9AD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91F9932D-B511-41FD-9998-B7FB40AD9AD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E26FBE95-0D5E-489B-8D23-23B4B7775049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E26FBE95-0D5E-489B-8D23-23B4B7775049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E26FBE95-0D5E-489B-8D23-23B4B7775049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E26FBE95-0D5E-489B-8D23-23B4B7775049}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
