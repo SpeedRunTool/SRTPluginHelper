@@ -29,8 +29,9 @@ jobs:
     
     env:
       BUILD_PLATFORM: 'Any CPU'
-      SOLUTION: 'SRTPluginHelper.sln'
-      PROJECT: 'src/SRTPluginHelper/SRTPluginHelper.csproj'
+      PROJECT_NAME: 'SRTPluginHelper'
+      SOLUTION: (${{env.PROJECT_NAME}} + '/' + ${{env.PROJECT_NAME}} + '.sln')
+      PROJECT: (${{env.PROJECT_NAME}} + '/src/' + ${{env.PROJECT_NAME}} + '/' + ${{env.PROJECT_NAME}} + '.csproj')
 
     steps:
     - name: Checkout
@@ -38,6 +39,16 @@ jobs:
       with:
         fetch-depth: 0
         ref: develop
+        path: ${{env.PROJECT_NAME}}
+    
+    # Checkout latest dependencies code
+    - name: Checkout SRTPluginBase
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        ref: develop
+        path: SRTPluginBase
+        repository: SpeedRunTool/SRTPluginBase
         
     - name: Get current UTC DateTime
       id: get-datetime
