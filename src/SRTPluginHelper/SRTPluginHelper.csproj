@@ -12,13 +12,13 @@
 		<Description>A nuget package providing helper methods for common scenarios when writing SRTHost plugins.</Description>
 		<Company>SpeedRunTool</Company>
 		<Authors>$(Company)</Authors>
-		<Copyright>Copyright © 2023 $(Company)</Copyright>
-		<Version>1.0.0</Version>
-		<FileVersion>1.0.0</FileVersion>
-		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<Copyright>Copyright © 2025 $(Company)</Copyright>
+		<Version>5.0.0</Version>
+		<FileVersion>5.0.0</FileVersion>
+		<AssemblyVersion>5.0.0</AssemblyVersion>
 		<PackageId>SRTPluginHelper</PackageId>
 		<PackageDescription>$(Description)</PackageDescription>
-		<RepositoryUrl>https://github.com/$(Company)/$(PackageId)</RepositoryUrl>
+		<RepositoryUrl>https://github.com/$(Company)/SRTPluginHelper</RepositoryUrl>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -37,11 +37,11 @@
 	</PropertyGroup>
 	
 	<ItemGroup>
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="*">
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.102">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.*" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.3" />
 	</ItemGroup>
 
 	<Choose>
@@ -55,7 +55,7 @@
 		</When>
 		<Otherwise>
 			<ItemGroup>
-				<PackageReference Include="SRTPluginBase" Version="4.0.*-*">
+				<PackageReference Include="SRTPluginBase" Version="5.0.*-*">
 					<Private>false</Private>
 					<ExcludeAssets>runtime</ExcludeAssets>
 				</PackageReference>

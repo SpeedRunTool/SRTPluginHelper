@@ -5,7 +5,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.Extensions.Logging;
-using SRTPluginBase;
+using SRTPluginBase.Interfaces;
 
 namespace SRTPluginHelper
 {
